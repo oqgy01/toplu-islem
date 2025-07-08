@@ -1,4 +1,4 @@
-name: ReorderPictures
+name: toplu-islem
 
 on:
   workflow_dispatch:
@@ -37,4 +37,4 @@ jobs:
       # Toplu sıralama betiğini çalıştır
       - name: Run batch script
         run: |
-          python reorder_pictures.py --batch "${{ github.event.inputs.batch }}"
+          python toplu-islem.py --batch "${{ github.event.inputs.batch }}"
